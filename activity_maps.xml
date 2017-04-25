@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.nara.map.MapsActivity"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Latitude"
+        android:inputType="text|numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorAccent" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/et1"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Longitude"
+        android:inputType="text|numberDecimal"
+        android:textAlignment="center"
+        android:textColorHint="@color/colorAccent" />
+
+
+    <ImageButton
+        android:id="@+id/btnse"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:onClick="btnonclick"
+        app:srcCompat="@drawable/ic_search_black" />
+
+    <ImageButton
+        android:id="@+id/btnter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et1"
+        android:onClick="btnonclick"
+        app:srcCompat="@drawable/ic_terrain_black" />
+
+    <ImageButton
+        android:id="@+id/btnsat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/et1"
+        android:onClick="btnonclick"
+        app:srcCompat="@drawable/ic_satellite_black" />
+
+
+</RelativeLayout>
